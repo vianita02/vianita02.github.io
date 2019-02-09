@@ -1,0 +1,163 @@
+/*font-family: 'Happy Monkey', cursive;
+font-family: Shadows Into Light', cursive;*/
+
+header,
+footer {
+    padding: .2em;
+    margin: 0 auto;
+    background-color: #c7f462;
+    color: #122a44;
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+}
+
+.header-hide {
+    display: none;
+}
+
+header {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+header img {
+    width: 40vw;
+    height: 40vw;
+}
+
+header h1 {
+    font-size: 5.5vw;
+}
+
+header h3 {
+    font-size: 4.5vw;
+}
+
+.motto {
+    text-align: center;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+nav {
+    background-color: #ff6b6b;
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    font-size: 3.5vw;
+}
+
+nav a {
+    color: #122a44;
+    text-decoration: none; 
+    
+}
+.active{
+    background-color: #c7f462;
+}
+/*a:visited {
+    color: #f89407;
+}*/
+
+a:focus {
+    color: black;
+}
+
+a:hover {
+    color: #53ff45
+}
+
+li a:active {
+    color: black;
+    background-color: #177e0d
+}
+
+h1 {
+    font-size: 5vw;
+    margin: 0;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+main {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    padding: .2em;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.topleft {
+    font-size: 4vw;
+    font-display: center;
+    line-height: 10px;
+    width: 40%;
+    height: 165px;
+    border: 3px solid white;
+    box-sizing: border-box;
+    background-color: #4ecdc4;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.container img {
+    width: 95%;
+    height: 50%;
+}
+
+.fiveday {
+    display: none;
+}
+
+article {
+    margin: 1em auto;
+    border: 3px solid white;
+    box-sizing: border-box;
+    background-color: #4ecdc4;
+    position: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+article p {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 5vw;
+    font-style: bold;
+}
+
+img {
+    
+    margin-top: 5px;
+    width: 95%;
+    height: auto;
+}
+
+#contact {
+    margin: 1em auto;
+    border: 3px solid white;
+    box-sizing: border-box;
+    position: center;
+    background-color: #c44d58;
+}
+
+#contact p,
+h4 {
+    font-family: 'Happy Monkey', cursive;
+    text-align: center;
+    line-height: 10px;
+}
+
+#contact iframe {
+    margin-left: 15px;
+}
