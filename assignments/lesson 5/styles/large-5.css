@@ -11,24 +11,31 @@
         width: 15vw;
         height: 15vw;
     }
-    header h1{
+    header h1 {
         font-size: 4.5vw;
     }
-     h1 {
+    h1 {
         font-size: 4.5vw;
     }
     header h3 {
         font-size: 3vw;
     }
     .header-hide {
+        padding: 3px;
         margin-top: 30px;
         display: block;
         background-color: #c44d58;
         width: 15vw;
-        height: 10vw;
+        height: 6vw;
+        color: white;
+    }
+    .header-hide p {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 2vw;
+        margin-top: 10px;
     }
     .header-hide img {
-        justify-content: space-evenly;
+        margin-left: 5px;
         float: left;
         width: 5vw;
         height: 5vw;
@@ -48,20 +55,29 @@
     }
     .topleft {
         font-size: 2vw;
-        height: 400px;
+        height: 300px;
         margin-left: 15px;
-        margin-top: 20px;
-        padding-top: 40px;
+        padding-top: 30px;
     }
     .topleft h2 {
         font-size: 2.2vw;
         margin-bottom: 2px;
+    }
+    .container img{
+        height: 500px;
+        width: 100%;
+
     }
     .fiveday {
         font-size: 1.5em;
         display: block;
         background-color: #c44d58;
         padding: 5px;
+    }
+    .fiveday img {
+        width: 65%;
+        height: 100px;
+        margin-bottom: 10px;
     }
     article {
         display: flex;
@@ -74,6 +90,7 @@
         width: 60%;
     }
     article .right p {
+        margin-top: 0%;
         padding-left: 5px;
         font-size: 1.5em;
     }
@@ -81,13 +98,12 @@
         font-size: 2em;
     }
     article .left {
-        width: 40%;
-        
+        width: 35%;
     }
     article img {
-        margin-top: 10px;
-        width: 30vw;
-        height: 20vw;
+        margin-top: 40px;
+        width: 25vw;
+        height: 35vw;
     }
     #contact {
         padding: 10px;
