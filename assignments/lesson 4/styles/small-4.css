@@ -1,87 +1,116 @@
 /*font-family: 'Happy Monkey', cursive;
 font-family: 'Amatic SC', cursive;*/
 
-header, footer {
-	padding: .2em;
-	margin: 0 auto;
-	background-color: #53ff45;
-	color: #060b49;
-	text-align: center;
-	font-family: 'Happy Monkey', cursive;
-}
-header img {
-	width:120px;
-	position: absolute;
-	left: 1.5em;
-	top: 1.5em;
-}
-
-.motto {
-	text-align: center;
-	margin:.5em;
-	
-}
-
-li {list-style: none;}
-
-nav {
-	padding: 0;
-	margin:0 ;
-    background-color: #fffc31;
+header,
+footer {
+    padding: .2em;
+    margin: 0 auto;
+    background-color: #c7f462;
+    color: #122a44;
     text-align: center;
     font-family: 'Happy Monkey', cursive;
 }
-nav a {
-	color:#060b49;
-	text-decoration:none;
-	font-size: 1.5em;
 
+header img {
+    width: 15vw;
+    height: 15wv;
+    float: left;
+    margin-top: 2px;
 }
+
+.motto {
+    text-align: center;
+    margin-top: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #ff6b6b;
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    font-size: 3.5vw;
+    font-family: 'Happy Monkey', cursive;
+}
+
+nav a {
+    color: #122a44;
+    text-decoration: none;
+}
+
 /*a:visited {color: #f89407;}*/
-a:focus {color:black;}
-a:hover {color:#53ff45}
-a:active {color:#177e0d}
+
+a:focus {
+    color: black;
+}
+
+a:hover {
+    color: #53ff45
+}
+
+a:active {
+    color: #177e0d
+}
+
+h1 {
+    font-size: 5vw;
+    margin: 0;
+}
+
+h2 {
+    font-size: 4vw;
+}
 
 main {
-	background-color:#1e2ede;
-	text-align: center;
-	font-family: 'Happy Monkey', cursive;
-	padding: .2em;
-	margin: 0 auto;
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    padding: .2em;
+    margin: 0 auto;
 }
+
 .container {
-	position: relative;
-  }
-  
-  .topleft {
-	
-	width: 380px;
-	height: 450px;
-	border: 3px solid blue;
-	box-sizing: border-box;
-	background-color:#fffc31;
-	position: absolute;
- 	top: 40px;
- 	left: 40px;
-  }
-  
- .container img { 
-	width: 95%;
-	height: auto;
-
-  }
-
-
-article  {
-	margin: 1em auto;
-	border: 3px solid blue;
-	box-sizing: border-box;
-	background-color:#ff9505;
-	position: center;
+    position: relative;
+    margin-bottom: 0;
 }
+
+.topleft {
+    font-size: 3vw;
+    font-display: center;
+    width: 40%;
+    height: 165px;
+    border: 3px solid white;
+    box-sizing: border-box;
+    background-color: #4ecdc4;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.container img {
+    width: 95%;
+    height: 50%;
+}
+
+article {
+    margin: 1em auto;
+    border: 3px solid white;
+    box-sizing: border-box;
+    background-color: #4ecdc4;
+    position: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 article p {
-	font-family: 'Shadows Into Light', cursive;
-	font-size: 1.5em;
-	font-style: bold;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 5vw;
+    font-style: bold;
 }
 
+img {
+    margin-left: 7px;
+    margin-top: 5px;
+    width: 95%;
+    height: auto;
