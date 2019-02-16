@@ -9,5 +9,5 @@ var month = monthList[ date.getMonth() ];
 var year = date.getFullYear();
 var dayNumber = date.getDate(); // Get day number in the Month
 
-document.getElementById("currentdate").innerHTML = "Today is: " + day + ", " + dayNumber + " " + 
+document.getElementById("currentdate").innerHTML = day + ", " + dayNumber + " " + 
                                                     month + " " + year;
