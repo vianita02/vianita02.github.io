@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kids Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalized.css">
+    <link rel="stylesheet" href="styles/small-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+
+</head>
+
+<body>
+    <script src="scripts/hamburguer.js"></script>
+    <header>
+        <img src="images\logo1.png" alt="kids logo">
+        <div>
+            <h1>The Kids Weather Site</h1>
+            <div class="motto">
+                <h3>Can we play outside today?</h3>
+            </div>
+        </div>
+        <div class="header-hide">
+            <img src="images/sunny.png" alt="current weather">
+            <p>Current Conditions</p>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter-8.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+
+    <body>
+        <div id="form">
+
+            <h1>Report a Storm or an Unusual Event </h1>
+            <form method="GET" action="thanks.html" id="weatherForm">
+                <div>
+                    <fieldset>
+                        <legend>Reporter Information</legend>
+                        <div>
+                            <label for="fname">*Full Name:</label>
+                            <input type="text" name="fname" id="fname" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="someone@gmail.com">
+                        </div>
+                        <div>
+                            <label for="pnumber">*Phone number: </label>
+                            <input type="tel" name="pnumber" id="pnumber" required>
+                        </div>
+                        <div>
+                            <label for="zcode">*Zip Code: </label>
+                            <input type="number" name="zcode" id="zcode" required>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+
+                        <legend>Event Information</legend>
+
+                        <div>
+                            <label for="stormDate">Storm Date:</label>
+                            <input type="date" name="stormDate" id="stormDate">
+                        </div>
+                        <div>
+                            <label for="stormType">Storm Type:</label>
+                            <input list="stormType" name="stormType">
+                            <datalist id="stormType">
+                                <option value="Flash Flood">
+                                <option value="Hail">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado">
+                            </datalist>
+
+                        </div>
+                        <div>
+                            <label for="stormSeverity">Storm Severity <em>(1 to 10): </em> </label>
+                            <input type="range" name="stormSeverity" value="10" min="1" max="10" step="1">
+                        </div>
+                        <div>
+                            <label for="stormRegion">Storm Region: </label>
+                            <select name="stormRegion" id="stormRegion">
+                                <option value="">--Select Region--</option>
+                                <option value="preston">Preston</option>
+                                <option value="sodaSpring">Soda Spring</option>
+                                <option value="fishHeaven">Fish Heaven</option>
+
+                            </select>
+
+                        </div>
+                        <div>User in danger level:</div>
+                        
+                            <label id="danger"><input type="radio" name="userDanger" value="yes">Yes</label>
+                            <label id="danger"><input type="radio" name="userDanger" value="maybe">Maybe</label>
+                            <label id="danger"><input type="radio" name="userDanger" value="no">No</label>
+                        
+                        <div>
+                        <div>Comments:</div>
+                            <textarea id="text" rows="5" cols="45" name="comment"
+                                form="weatherForm" placeholder="Enter comments here..."></textarea>
+                        </div>
+
+                    </fieldset>
+                    <div id="submit">
+                        <input type="submit" value="Report Wheater">
+                    </div>
+                </div>
+            </form>
+    </body>
+
+    </div>
+    <footer>
+        <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+        <p id="currentdate"></p>
+    </footer>
+    </div>
+    <script src="scripts/currendate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
