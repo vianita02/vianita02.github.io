@@ -52,7 +52,7 @@
                         <legend>Reporter Information</legend>
                         <div>
                             <label for="fname">*Full Name:</label>
-                            <input type="text" name="fname" id="fname" required>
+                            <input type="text" name="fname" id="fname" pattern="[A-Za-z]" min="5" required>
                         </div>
                         <div>
                             <label for="email">Email</label>
@@ -90,8 +90,10 @@
 
                         </div>
                         <div>
-                            <label for="stormSeverity">Storm Severity <em>(1 to 10): </em> </label>
-                            <input type="range" name="stormSeverity" value="10" min="1" max="10" step="1">
+                            <label for="rating">Storm Severity <em>(1 to 10): </em></label>
+                            <input type="range"  id="rating" value="5" min="1" max="10" step="1" oninput="djustRating(this.value)" onchange="djustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+
                         </div>
                         <div>
                             <label for="stormRegion">Storm Region: </label>
@@ -132,6 +134,7 @@
     </div>
     <script src="scripts/currendate.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/slider.js"></script>
 </body>
 
 </html>
