@@ -190,6 +190,9 @@ h4 {
     letter-spacing: 8px;
     padding-top: 60px;
 }
+/*------------------json--------*/
+
+
 
 /*-----------FORM CSS------------*/
 
@@ -236,13 +239,6 @@ form input {
     max-width: 20rem;
     background-color: #ff6b6b
 }
-
-input[type="radio"] {
-    margin-left:-80px;
-    margin-right: -78px;
-  
-}
-
 select {
     display: block;
     font-size: 1rem;
@@ -250,11 +246,17 @@ select {
     border-radius: 4px;
     padding: .75rem;
     color: white;
-    width: 95%;
+    width: 80%;
     max-width: 20rem;
     background-color: #ff6b6b
 }
-
+input[type="radio"] {
+    margin-left:-70px;
+    margin-right: -68px;
+    background-color:#bef3ef ;
+    
+  
+}
 #text {
     color:white;
     border: solid 1x #c44d58;
@@ -282,6 +284,8 @@ select {
     font-size: 6.5vw;
     padding: 50px;
 }
+
+
 @media screen and (max-width:500px) {
     .fiveday {
         display: none;

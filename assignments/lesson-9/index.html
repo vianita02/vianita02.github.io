@@ -30,28 +30,73 @@
         </div>
     </header>
     <nav>
-            <button onclick="toggleMenu()">&#9776;Menu</button>
-            <ul id="primaryNav" class="hide">
-                <li class="active" ><a href="index.html">Home</a></li>
-                <li><a href="preston-8.html">Preston</a></li>
-                <li><a href="#">Soda Spring</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="stormcenter-8.html">Storm Center</a></li>
-                <li><a href="gallery-8.html">Gallery</a></li>
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-8.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+
+        </ul>
+    </nav>
     
-            </ul>
-        </nav>
-        <div id="wrapper">
-                <main>
-                    
-                </main>
-        <footer>
-                <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
-                <p id="currentdate"></p>
-            </footer>
-            </div>
-            <script src="scripts/currendate.js"></script>
-            <script src="scripts/windchill.js"></script>
-        </body>
-        
-        </html>
+    <body>
+            <div id="gridContainer">
+        <header>
+
+        </header>
+
+        <section>
+
+        </section>
+        <script>
+
+            var section = document.querySelector('section');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function () {
+                var towns = request.response;
+                showTowns(towns);
+            }
+
+            function showTowns(jsonObj) {
+                var cities = jsonObj ['towns'];
+
+                for (var i = 0; i < cities.length; i++) {
+                    var myArticle = document.createElement('article');
+                    var myH2 = document.createElement('h2');
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
+                    var myPara3 = document.createElement('p');
+
+                    myH2.textContent = cities[i].name;
+                    myPara1.textContent = 'Year Founded: ' + cities[i].yearFounded;
+                    myPara2.textContent = 'Population: ' + cities[i].currentPopulation;
+                    myPara3.textContent = 'Annual Rainfall: ' + cities[i].averageRainfall;
+
+                    myArticle.appendChild(myH2);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+
+                    section.appendChild(myArticle);
+                }
+            }
+        </script>
+        </div>
+    </body>
+    <footer>
+        <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+        <p id="currentdate"></p>
+    </footer>
+    </div>
+    <script src="scripts/currendate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
