@@ -1,0 +1,76 @@
+@media screen and (min-width:501px) and (max-width:1200px) {
+    header {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header img {
+        width: 25vw;
+        height: 20vw;
+    }
+    header h1 {
+        margin-top: 50px;
+        font-size: 4vw;
+    }
+    header h3 {
+        font-size: 3vw;
+    }
+    .topleft {
+        font-size: 2vw;
+        height: 300px;
+        margin-left: 15px;
+        padding-top: 30px;
+    }
+    .fiveday {
+        display: none;
+    }
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px;
+    }
+    article .right {
+        width: 60%;
+    }
+    article .right p {
+        margin-top: 0%;
+        padding-left: 5px;
+        font-size: 1.5em;
+    }
+    article .right h3 {
+        font-size: 2em;
+    }
+    article .left {
+        width: 35%;
+    }
+    article img {
+        margin-top: 40px;
+        width: 25vw;
+        height: 35vw;
+    }
+    #contact p,
+    h4 {
+        font-family: 'Happy Monkey', cursive;
+        text-align: center;
+        font-size: 2vw;
+    }
+    #contact iframe {
+        margin-left: 50px;
+    }
+    #gallery {
+        font-size: 2vw;
+    }
+    #gridContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+    input[type="radio"] {
+        margin-left: -150px;
+        margin-right: -148px;
+    }
+    .thanks {
+        font-size:4vw;
+    }
+}

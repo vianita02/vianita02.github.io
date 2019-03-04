@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kids Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalized.css">
+    <link rel="stylesheet" href="styles/small-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+
+</head>
+
+<body>
+    <script src="scripts/hamburguer.js"></script>
+    <header>
+        <img src="images/logo1.png" alt="kids logo">
+        <div>
+            <h1>The Kids Weather Site</h1>
+            <div class="motto">
+                <h3>Can we play outside today?</h3>
+            </div>
+        </div>
+        <div class="header-hide">
+            <img src="images/sunny.png" alt="current weather">
+            <p>Current Conditions</p>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-8.html">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <div id="gallery">
+        <h1>GALLERY</h1>
+        <div id="gridContainer">
+            <figure>
+                <img class="shadow" src="images/gallery/baer-lake-1768520__340small.jpg" alt="Bear lake">
+                <figcaption>
+                    <h3>Bear lake is 109 sq miles of fresh wateradventure.</h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="shadow" src="images/gallery/bike_path1_500small.jpg" alt="bike path and dears">
+                <figcaption>
+                    <h3>Spring is here! Enjoy this beautifull bike path, you may find more than a friend. </h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="shadow" src="images/gallery/idaho-1675970__340small.jpg" alt="Idaho">
+                <figcaption>
+                    <h3>Idaho Waterfalls a spectacular show that you can't miss.</h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="shadow" src="images/gallery/idahotornadosmall.jpg" alt="tornado">
+                <figcaption>
+                    <h3>A rare funnel cloud over Boise, Idaho.</h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="shadow" src="images/gallery/saint-maries-river-2918483__340small.jpg"
+                    alt="saint mary river"></br>
+                <figcaption>
+                    <h3>Saint Maries River.</h3>
+                    </figcaption<h3>
+            </figure>
+            <figure>
+                <img class="shadow" src="images/gallery/snake-river-882377__340small.jpg" alt="snake river">
+                <figcaption>
+                    <h3>Snake River.</h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="shadow" src="images/gallery/bts_Lightning-storm-near-Twin-Fallssmall.jpg" alt="Ligtning storm">
+                <figcaption>
+                    <h3>Ligtning storm near Twin Fall, a beautiful and frightening scene.</h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="shadow" src="images/gallery/soda-springs-1768612__340small.jpg" alt="Soda springs">
+                <figcaption>
+                    <h3>Soda Springs.</h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="shadow" src="images/gallery/5918d273c30d2.imagesmall.jpg" alt="snow storm">
+                <figcaption>
+                    <h3>Severe storm causes delays and many accidents. </h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="shadow" src="images/gallery/waterfall-1093684__340small.jpg" alt="waterfalls">
+                <figcaption>
+                    <h3>Waterfalls and a spectacular rainbow.</h3>
+                </figcaption>
+
+            </figure>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+        <p id="currentdate"></p>
+    </footer>
+    </div>
+    <script src="scripts/currendate.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
