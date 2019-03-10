@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <script src="scripts/hamburguer.js"></script>
+
     <header>
         <img src="images\logo1.png" alt="kids logo">
         <div>
@@ -41,62 +41,68 @@
 
         </ul>
     </nav>
-    
-    <body>
-            <div id="gridContainer">
-        <header>
 
-        </header>
+    <div id='background'>
+        <div id="wrapper">
+            <main>
+                <h2>Welcome to our site!</h2>
+                <div class="container">
+                    <img src="images/bear-bench-child-207891.jpg" alt="Teddy bear seating on a bench">
 
-        <section>
+                    <div class="topleft">
+                        <p id="description">A kids friendly page to check the weather,help them
+                            what to wear and find fun activities for them to do depending on the weather.</p>
 
-        </section>
-        <script>
-
-            var section = document.querySelector('section');
-            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-            var request = new XMLHttpRequest();
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-            request.onload = function () {
-                var towns = request.response;
-                showTowns(towns);
-            }
-
-            function showTowns(jsonObj) {
-                var cities = jsonObj ['towns'];
-
-                for (var i = 0; i < cities.length; i++) {
-                    var myArticle = document.createElement('article');
-                    var myH2 = document.createElement('h2');
-                    var myPara1 = document.createElement('p');
-                    var myPara2 = document.createElement('p');
-                    var myPara3 = document.createElement('p');
-
-                    myH2.textContent = cities[i].name;
-                    myPara1.textContent = 'Year Founded: ' + cities[i].yearFounded;
-                    myPara2.textContent = 'Population: ' + cities[i].currentPopulation;
-                    myPara3.textContent = 'Annual Rainfall: ' + cities[i].averageRainfall;
-
-                    myArticle.appendChild(myH2);
-                    myArticle.appendChild(myPara1);
-                    myArticle.appendChild(myPara2);
-                    myArticle.appendChild(myPara3);
-
-                    section.appendChild(myArticle);
-                }
-            }
-        </script>
+                    </div>
+                </div>
+            </main>
         </div>
-    </body>
-    <footer>
-        <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
-        <p id="currentdate"></p>
-    </footer>
+                <div id="gridContainer">
+                    <div class="grid-item">
+                        <section>
+                            <h3>Fish Heaven</h3>
+                            <p id="fHmotto" class="json"></p>
+                            <div class="jsonInfo">
+                                <p id="fHyear"></p>
+                                <p id="fHpopulation"></p>
+                                <p id="fHrainfall"></p>
+                            </div>
+                            <img src="images/boy-child-cold-1648425.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <h3>Preston</h3>
+                        <p id="PrestonMotto" class="json"></p>
+                        <div class="jsonInfo">
+                            <p id="PrestonYear"></p>
+                            <p id="PrestonPopulation"></p>
+                            <p id="PrestonRainfall"></p>
+                        </div>
+                        <img src="images/adults-child-cold-1620653.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <h3>Soda Springs</h3>
+                        <p id="Smotto" class="json"></p>
+                        <div class="jsonInfo">
+                            <p id="Syear"></p>
+                            <p id="Spopulation"></p>
+                            <p id="Srainfall"></p>
+                        </div>
+                        <img src="images/christmas-cold-friends-269370.jpg" alt="">
+                    </div>
+                    </section>
+                </div>
+                
+        <div>
+            <footer>
+                <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <p id="currentdate"></p>
+            </footer>
+        </div>
+        <script src="scripts/hamburguer.js"></script>
+        <script src="scripts/currendate.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/json.js"></script>
     </div>
-    <script src="scripts/currendate.js"></script>
-    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

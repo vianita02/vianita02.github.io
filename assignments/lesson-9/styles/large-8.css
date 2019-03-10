@@ -22,7 +22,7 @@
     }
     .header-hide {
         padding: 3px;
-        margin-top: 30px;
+        margin-top: 40px;
         display: block;
         background-color: #c44d58;
         width: 15vw;
@@ -31,8 +31,9 @@
     }
     .header-hide p {
         font-family: 'Shadows Into Light', cursive;
+        line-height: 30px;
         font-size: 2vw;
-        margin-top: 0;
+        margin-top: 10px;
     }
     .header-hide img {
         margin-left: 5px;
@@ -69,6 +70,10 @@
     .topleft h2 {
         font-size: 2.2vw;
         margin-bottom: 2px;
+    }
+    #description {
+        line-height: 40px;
+        font-size: 2vw;
     }
     .container img {
         height: 500px;
@@ -125,12 +130,15 @@
     #contact img {
         width: 40vw;
     }
+    #gridContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
     #gallery {
         font-size: 1vw;
     }
-    #gridContainer {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    
+    
     .shadow:hover {
         box-shadow: 0 0 50px #333;
     }
@@ -149,5 +157,25 @@
     .thanks {
         font-size: 3em;
         padding: 100px;
+    }
+    .grid-item h3 {
+        font-size: 3vw;
+    }
+    
+    .json {
+        font-size: 1.5em;
+        margin-top: -20px;
+    }
+    #PrestonMotto {
+        margin-top: -40px;
+        line-height: 30px;
+    }
+    #Smotto {
+        margin-top: -40px;
+        font-size: 1.2em;
+        line-height: 20px;
+    }
+    .jsonInfo {
+        font-size: 2vw;
     }
 }

@@ -18,9 +18,13 @@
     }
     .topleft {
         font-size: 2vw;
-        height: 300px;
+        height: 250px;
         margin-left: 15px;
-        padding-top: 30px;
+        padding-top: 10px;
+    }
+    #description {
+        line-height: 30px;
+        font-size: 3vw;
     }
     .fiveday {
         display: none;
@@ -66,11 +70,19 @@
     #gridContainer {
         grid-template-columns: 1fr 1fr;
     }
+  
     input[type="radio"] {
         margin-left: -150px;
         margin-right: -148px;
     }
     .thanks {
         font-size:4vw;
+    }
+    section article {
+        width: 40%;
+        float: left;
+      }
+      section{
+        width:90%; 
     }
 }
