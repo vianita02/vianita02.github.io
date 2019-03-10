@@ -33,3 +33,7 @@ header img {
 footer {
     font-size: 1em; 
 }    
+.extraUl {
+    list-style-type: none;
+    margin-left: 45px;
+}
