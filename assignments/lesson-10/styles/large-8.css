@@ -1,0 +1,181 @@
+@media only screen and (min-width: 1201px) {
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+    header {
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+    header img {
+        width: 15vw;
+        height: 15vw;
+    }
+    header h1 {
+        font-size: 4.5vw;
+    }
+    h1 {
+        font-size: 4.5vw;
+    }
+    header h3 {
+        font-size: 3vw;
+    }
+    .header-hide {
+        padding: 3px;
+        margin-top: 40px;
+        display: block;
+        background-color: #c44d58;
+        width: 15vw;
+        height: 6vw;
+        color: white;
+    }
+    .header-hide p {
+        font-family: 'Shadows Into Light', cursive;
+        line-height: 30px;
+        font-size: 2vw;
+        margin-top: 10px;
+    }
+    .header-hide img {
+        margin-left: 5px;
+        float: left;
+        width: 5vw;
+        height: 5vw;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul li a {
+        border: none;
+    }
+    #primaryNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul.hide {
+        display: block;
+    }
+    nav ul li a {
+        font-size: .6em;
+        padding: 55px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .topleft {
+        font-size: 2vw;
+        height: 300px;
+        margin-left: 15px;
+        padding-top: 30px;
+    }
+    .topleft h2 {
+        font-size: 2.2vw;
+        margin-bottom: 2px;
+    }
+    #description {
+        line-height: 40px;
+        font-size: 2vw;
+    }
+    .container img {
+        height: 500px;
+        width: 100%;
+    }
+    .fiveday {
+        font-size: 1.5em;
+        display: block;
+        background-color: #c44d58;
+        padding: 5px;
+    }
+    .fiveday img {
+        width: 65%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px;
+    }
+    article .right {
+        width: 60%;
+    }
+    article .right p {
+        margin-top: 0%;
+        padding-left: 5px;
+        font-size: 1.5em;
+    }
+    article .right h3 {
+        font-size: 2em;
+    }
+    article .left {
+        width: 35%;
+    }
+    article img {
+        margin-top: 40px;
+        width: 25vw;
+        height: 35vw;
+    }
+    #contact {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #contact div {
+        width: 50%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #contact img {
+        width: 40vw;
+    }
+    #gridContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    #gallery {
+        font-size: 1vw;
+    }
+    
+    
+    .shadow:hover {
+        box-shadow: 0 0 50px #333;
+    }
+    #form h1 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 2em;
+    }
+    form legend {
+        font-size: 1.5em;
+    }
+    input[type="radio"] {
+        margin-left: -155px;
+        margin-right: -148px;
+    }
+    .thanks {
+        font-size: 3em;
+        padding: 100px;
+    }
+    .grid-item h3 {
+        font-size: 3vw;
+    }
+    
+    .json {
+        font-size: 1.5em;
+        margin-top: -20px;
+    }
+    #PrestonMotto {
+        margin-top: -40px;
+        line-height: 30px;
+    }
+    #Smotto {
+        margin-top: -40px;
+        font-size: 1.2em;
+        line-height: 20px;
+    }
+    .jsonInfo {
+        font-size: 2vw;
+    }
+}

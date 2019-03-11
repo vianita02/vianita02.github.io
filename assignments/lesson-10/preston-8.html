@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kids Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalized.css">
+    <link rel="stylesheet" href="styles/small-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+
+</head>
+
+<body>
+    <script src="scripts/hamburguer.js"></script>
+    <header>
+        <img src="images\logo1.png" alt="kids logo">
+        <div>
+            <h1>The Kids Weather Site</h1>
+            <div class="motto">
+                <h3>Can we play outside today?</h3>
+            </div>
+        </div>
+        <div class="header-hide">
+            <img src="images/sunny.png" alt="current weather">
+            <p>Current Conditions</p>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-8.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <div id='background'>
+        <div id="wrapper">
+            <main>
+                <h1>Preston Idaho</h1>
+                <div class="container">
+                    <img src="images/winter.jpg" alt="kids in the snow">
+                    <div class="topleft">
+                        <h2>Weather Sumary</h2>
+                        <p>Currently: <span id="temperature"></span> &deg;</p>
+                        <p>High: 76&deg;</p>
+                        <p id="windChill"></p>
+                        <p>Humidity: 69%</p>
+                        <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+                    </div>
+                    <div class="fiveday">
+                        <h4>5 Day Forecast</h4>
+                        <img src="images/Blog-Weather-Forecast.png" alt="">
+
+                    </div>
+                </div>
+                <article>
+
+                    <div class="right">
+                        <h3>Beginners Ski & Snowboard Tips for Kids</h3>
+                        <p> Teaching your kids to ski or snowboard gives them an active pursuit they'll enjoy for
+                            the rest of their lives. Not only are these popular winter sports fun, they can help
+                            kids stay fit, build important skills and expand travel horizons as well. But introducing
+                            little ones to the slopes can be intimidating–especially if you're still at the beginning or
+                            intermediate stage yourself.</p>
+                        <p> We spoke to skiing and snowboarding experts to find out what you need to know to
+                            help your child advance from novice to snow bunny in no time.</p>
+                    </div>
+                    <div class="left">
+                        <img src="images/kids snowboard.jpg" alt="kids snowboarding">
+
+                    </div>
+                </article>
+
+
+                <div id='contact'>
+                    <div>
+                        <h4>The Kids Weather Site</h4>
+                        <p>30 N 500 E </p>
+                        <p>Provo, Utah 84526</p>
+
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282523094!2d-111.91534459120224!3d42.09980531205498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549685815537"
+                        width="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+        </div>
+        </main>
+
+        <div>
+            <footer>
+                <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <p id="currentdate"></p>
+            </footer>
+        </div>
+        <script src="scripts/currendate.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </div>    
+</body>
+
+</html>

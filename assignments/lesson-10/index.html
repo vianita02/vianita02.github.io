@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kids Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalized.css">
+    <link rel="stylesheet" href="styles/small-8.css">
+    <link rel="stylesheet" href="styles/medium-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images\logo1.png" alt="kids logo">
+        <div>
+            <h1>The Kids Weather Site</h1>
+            <div class="motto">
+                <h3>Can we play outside today?</h3>
+            </div>
+        </div>
+        <div class="header-hide">
+            <img src="images/sunny.png" alt="current weather">
+            <p>Current Conditions</p>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-8.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+
+    <div id='background'>
+        <div id="wrapper">
+            <main>
+                <h2>Welcome to our site!</h2>
+                <div class="container">
+                    <img src="images/bear-bench-child-207891.jpg" alt="Teddy bear seating on a bench">
+
+                    <div class="topleft">
+                        <p id="description">A kids friendly page to check the weather,help them
+                            what to wear and find fun activities for them to do depending on the weather.</p>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+                <div id="gridContainer">
+                    <div class="grid-item">
+                        <section>
+                            <h3>Fish Heaven</h3>
+                            <p id="fHmotto" class="json"></p>
+                            <div class="jsonInfo">
+                                <p id="fHyear"></p>
+                                <p id="fHpopulation"></p>
+                                <p id="fHrainfall"></p>
+                            </div>
+                            <img src="images/boy-child-cold-1648425.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <h3>Preston</h3>
+                        <p id="PrestonMotto" class="json"></p>
+                        <div class="jsonInfo">
+                            <p id="PrestonYear"></p>
+                            <p id="PrestonPopulation"></p>
+                            <p id="PrestonRainfall"></p>
+                        </div>
+                        <img src="images/adults-child-cold-1620653.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <h3>Soda Springs</h3>
+                        <p id="Smotto" class="json"></p>
+                        <div class="jsonInfo">
+                            <p id="Syear"></p>
+                            <p id="Spopulation"></p>
+                            <p id="Srainfall"></p>
+                        </div>
+                        <img src="images/christmas-cold-friends-269370.jpg" alt="">
+                    </div>
+                    </section>
+                </div>
+                
+        <div>
+            <footer>
+                <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <p id="currentdate"></p>
+            </footer>
+        </div>
+        <script src="scripts/hamburguer.js"></script>
+        <script src="scripts/currendate.js"></script>
+        <script src="scripts/json.js"></script>
+    </div>
+</body>
+
+</html>
