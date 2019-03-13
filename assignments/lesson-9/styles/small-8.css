@@ -183,8 +183,8 @@ h4 {
 
 #gridContainer {
     display: grid;
-    grid-gap: 20px;
 }
+
 
 #gallery {
     background-color: #dcf5a3;
@@ -201,7 +201,6 @@ h4 {
 }
 
 /*------------------json--------*/
-
 
 /*section #section {
     display:grid;
@@ -232,12 +231,13 @@ h4 {
 }
 
 #PrestonMotto {
+    line-height: 20px;
+}
 
+#Smotto {
     line-height: 20px;
 }
-#Smotto{
-    line-height: 20px;
-}
+
 .json {
     line-height: 3px;
     text-align: center;
