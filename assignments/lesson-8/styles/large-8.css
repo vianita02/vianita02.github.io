@@ -74,17 +74,7 @@
         height: 500px;
         width: 100%;
     }
-    .fiveday {
-        font-size: 1.5em;
-        display: block;
-        background-color: #c44d58;
-        padding: 5px;
-    }
-    .fiveday img {
-        width: 65%;
-        height: 100px;
-        margin-bottom: 10px;
-    }
+    
     article {
         display: flex;
         flex-direction: row;

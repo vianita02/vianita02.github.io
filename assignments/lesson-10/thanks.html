@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kids Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalized.css">
+    <link rel="stylesheet" href="styles/small-10.css">
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <link rel="stylesheet" href="styles/large-10.css">
+
+</head>
+
+<body>
+    <script src="scripts/hamburguer.js"></script>
+    <header>
+        <img src="images\logo1.png" alt="kids logo">
+        <div>
+            <h1>The Kids Weather Site</h1>
+            <div class="motto">
+                <h3>Can we play outside today?</h3>
+            </div>
+        </div>
+        <div class="header-hide">
+            <img src="images/sunny.png" alt="current weather">
+            <p>Current Conditions</p>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-10.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <main>
+     <h1 class="thanks">Thank you for submitting your wheather report.</h1>
+    </main>
+    <footer>
+            <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+            <p id="currentdate"></p>
+        </footer>
+        </div>
+        <script src="scripts/currendate.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+    
+    </html>
