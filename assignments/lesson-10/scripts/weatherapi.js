@@ -1,4 +1,4 @@
-var apiURLstring = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=bce121c08c27c65cd7f48d40df929695&units=imperial';
+var apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=bce121c08c27c65cd7f48d40df929695&units=imperial';
 var weatherRequest = new XMLHttpRequest();
 weatherRequest.open('GET', apiURLstring, true);
 weatherRequest.responseType = 'json';
@@ -18,7 +18,7 @@ weatherRequest.onload = function () {
    
    
 }
-var apiforecaststring = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=bce121c08c27c65cd7f48d40df929695&units=imperial';
+var apiforecaststring = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=bce121c08c27c65cd7f48d40df929695&units=imperial';
 var forecastRequest = new XMLHttpRequest();
 forecastRequest.open('GET', apiforecaststring, true);
 forecastRequest.responseType = 'json';
