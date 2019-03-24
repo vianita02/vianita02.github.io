@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soda Spring</title>
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalized.css">
+    <link rel="stylesheet" href="styles/small-10.css">
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <link rel="stylesheet" href="styles/large-10.css">
+
+
+</head>
+
+<body>
+    <script src="scripts/hamburguer.js"></script>
+    <header>
+        <img src="images\logo1.png" alt="kids logo">
+        <div>
+            <h1>The Kids Weather Site</h1>
+            <div class="motto">
+                <h3>Can we play outside today?</h3>
+            </div>
+        </div>
+        <div class="header-hide">
+                <img  id="icon" src="" alt="">
+                <p><span id="current-conditions"></span></p>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li class="active"><a href="sodaspring.html">Soda Spring</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter-10.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <div id='background'>
+        <div id="wrapper">
+            <main>
+                <h1>Soda Springs</h1>
+                <div class="container">
+                    
+                    <picture>
+                        <img src="images/beverage-bright-cold-large.jpg" alt="odrink in the snow"
+                                srcset="images/beverage-bright-cold-small.jpg 200w,
+                                        images/beverage-bright-cold-med.jpg 800w,
+                                        images/beverage-bright-cold-large.jpg 1100w,">
+                    </picture>
+                    <div class="topleft">
+                        <h2>Weather Sumary</h2>
+                        <p>Currently: <span id="sscurrent-temp"></span>&deg; F</p>
+                        <p>Pressure: <span id="sspressure"></span></p>
+                        <p>Humidity: <span id="sshumidity"></span>%</p>
+                        <p>Min: <span id="sstemp_min"></span>&deg; F</p>
+                        <p>Max: <span id="sstemp_max"></span>&deg; F</p>
+                        <p>Wind: <span id="sswindspeed"></span>mi/h</p>
+                    </div>
+                </div>
+                <div class="fiveday">
+                    <table>
+                        <thead>
+                            <th colspan="5">5 Day Forecast</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><span id="ssday0"></th>
+                                <th><span id="ssday1"></th>
+                                <th><span id="ssday2"></th>
+                                <th><span id="ssday3"></th>
+                                <th><span id="ssday4"></th>
+                            </tr>
+                            <tr>
+                                <td>Min: <span id="sstempmin1"></span>&deg; F</td>
+                                <td>Min: <span id="sstempmin2"></span>&deg; F</td>
+                                <td>Min: <span id="sstempmin3"></span>&deg; F</td>
+                                <td>Min: <span id="sstempmin4"></span>&deg; F</td>
+                                <td>Min: <span id="sstempmin5"></span>&deg; F</td>
+                            </tr>
+                            <tr>
+                                <td>Max: <span id="sstempmax1"></span>&deg; F</td>
+                                <td>Max: <span id="sstempmax2"></span>&deg; F</td>
+                                <td>Max: <span id="sstempmax3"></span>&deg; F</td>
+                                <td>Max: <span id="sstempmax4"></span>&deg; F</td>
+                                <td>Max: <span id="sstempmax5"></span>&deg; F</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <article>
+
+                    <div class="right">
+                        <h3>10 Benefits of Coloring Pages for Kids’ Psychology and Development</h3>
+                        <p> There’s a simple activity that helps children to develop cognitively, 
+                            psychologically and creatively: coloring. They love to do it anyway, 
+                            and it could lead to a healthier, happier life in adolescence and into adulthood.</p>
+                        <p> Some of the key benefits of coloring pages in kids’ psychology and development are:improves motor skills,
+                        prepares them for school,stimulates creativity, contributes to better handwriting and
+                        improved focus and hand to eye coordination.
+
+                        </p>
+                    </div>
+                    <div class="left">
+                        <img src="images/activity-art-artistic-small.jpg" alt="kids coloring">
+
+                    </div>
+                </article>
+
+
+                <div id='contact'>
+                    <div>
+                        <h4>The Kids Weather Site</h4>
+                        <p>30 N 500 E </p>
+                        <p>Provo, Utah 84526</p>
+
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.912989829936!2d-111.62379163585516!3d42.661470635317784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1553042424485"
+                        width="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+        </div>
+        </main>
+
+        <div>
+            <footer>
+                <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <p id="currentdate"></p>
+            </footer>
+        </div>
+        <script src="scripts/currendate.js"></script>
+        <script src="scripts/weatherss.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fish Haven</title>
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalized.css">
+    <link rel="stylesheet" href="styles/small-10.css">
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <link rel="stylesheet" href="styles/large-10.css">
+
+
+</head>
+
+<body>
+    <script src="scripts/hamburguer.js"></script>
+    <header>
+        <img src="images\logo1.png" alt="kids logo">
+        <div>
+            <h1>The Kids Weather Site</h1>
+            <div class="motto">
+                <h3>Can we play outside today?</h3>
+            </div>
+        </div>
+        <div class="header-hide">
+                <img  id="icon" src="" alt="">
+                <p><span id="current-conditions"></span></p>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="sodaspring.html">Soda Spring</a></li>
+            <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter-10.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <div id='background'>
+        <div id="wrapper">
+            <main>
+                <h1>Fish Heaven</h1>
+                <div class="container">
+
+                    <picture>
+                        <img src="images/action-amusement-boy-large.jpg" alt="kids ice skating" srcset="images/action-amusement-boy-small.jpg 200w,
+                                        images/action-amusement-boy-med.jpg 800w,
+                                        images//action-amusement-boy-large.jpg 1100w,">
+                    </picture>
+                    <div class="topleft">
+                        <h2>Weather Sumary</h2>
+                        <p>Currently: <span id="fhcurrent-temp"></span>&deg; F</p>
+                        <p>Pressure: <span id="fhpressure"></span></p>
+                        <p>Humidity: <span id="fhhumidity"></span>%</p>
+                        <p>Min: <span id="fhtemp_min"></span>&deg; F</p>
+                        <p>Max: <span id="fhtemp_max"></span>&deg; F</p>
+                        <p>Wind: <span id="fhwindspeed"></span>mi/h</p>
+                    </div>
+                </div>
+                <div class="fiveday">
+                    <table>
+                        <thead>
+                            <th colspan="5">5 Day Forecast</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><span id="fhday0"></th>
+                                <th><span id="fhday1"></th>
+                                <th><span id="fhday2"></th>
+                                <th><span id="fhday3"></th>
+                                <th><span id="fhday4"></th>
+                            </tr>
+                            <tr>
+                                <td>Min: <span id="fhtempmin1"></span>&deg; F</td>
+                                <td>Min: <span id="fhtempmin2"></span>&deg; F</td>
+                                <td>Min: <span id="fhtempmin3"></span>&deg; F</td>
+                                <td>Min: <span id="fhtempmin4"></span>&deg; F</td>
+                                <td>Min: <span id="fhtempmin5"></span>&deg; F</td>
+                            </tr>
+                            <tr>
+                                <td>Max: <span id="fhtempmax1"></span>&deg; F</td>
+                                <td>Max: <span id="fhtempmax2"></span>&deg; F</td>
+                                <td>Max: <span id="fhtempmax3"></span>&deg; F</td>
+                                <td>Max: <span id="fhtempmax4"></span>&deg; F</td>
+                                <td>Max: <span id="fhtempmax5"></span>&deg; F</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <article>
+
+                    <div class="right">
+                        <h3>Tree Investigators</h3>
+                        <p>Sometimes being a good parent is as simple as learning how to frame things
+                            to your kids. We no longer go on traditional “hikes.” We do things like,
+                            spend the day working as “tree investigators.”
+                            We are lucky to live in an area with beautiful scenery within a short drive.
+                            If you live in a more urban area don’t be discouraged;
+                            you can take a trek to your backyard or a local playground.
+                            Any place that has trees will do.</p>
+                        <p> Get your kids out to an orchard and they are sure 
+                            to run around as they pick. This is a wonderful family tradition. </p>
+                    </div>
+                    <div class="left">
+                        <img src="images/adorable-autumn-baby-small.jpg" alt="baby on an autumn garden">
+
+                    </div>
+                </article>
+
+
+                <div id='contact'>
+                    <div>
+                        <h4>The Kids Weather Site</h4>
+                        <p>30 N 500 E </p>
+                        <p>Provo, Utah 84526</p>
+
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.955858020145!2d-111.40486807218922!3d42.03805585404865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553041954052"
+                        width="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                </div>
+        </div>
+        </main>
+
+        <div>
+            <footer>
+                <p>&copy;2019 - Viviana Estay - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+                <p id="currentdate"></p>
+            </footer>
+        </div>
+        <script src="scripts/currendate.js"></script>
+        <script src="scripts/weatherfh.js"></script>
+    </div>
+</body>
+
+</html>
