@@ -29,7 +29,7 @@ forecastRequest.responseType = 'json';
 forecastRequest.send();
 forecastRequest.onload = function () {
    var forecastData = forecastRequest.response;
-   showForecast(forecastData);
+ 
    
 
    document.getElementById("sstempmin1").innerHTML = forecastData.list[1].main.temp_min.toFixed (0);
@@ -51,20 +51,13 @@ forecastRequest.onload = function () {
    document.getElementById("sstempmax5").innerHTML = forecastData.list[38].main.temp_max.toFixed (0);
 
 }
-function showForecast(forecastData) {
-   let rgex = /[0-8 :]21:00:00/
-   let i = -1;
-   do {
-      i++;
-   }
-   while (!rgex.test(forecastData.list[i].dt_txt));
+
 
    var fcstDaysArr = [];
    var fcstHighArr = [];
    for (let j = 0; j < 5; j++) {
       fcstDaysArr[j] = getFcstDay(j);
-      fcstHighArr[j] = forecastData.list[i].main.temp;
-      i += 8;
+    
    }
    document.getElementById('ssday0').innerHTML = fcstDaysArr[0];
    document.getElementById('ssday1').innerHTML = fcstDaysArr[1];
@@ -85,4 +78,4 @@ function showForecast(forecastData) {
       else return 'Sat';
    }
 
-}
+
