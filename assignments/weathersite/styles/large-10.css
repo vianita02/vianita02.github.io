@@ -32,7 +32,6 @@
         font-family: 'Shadows Into Light', cursive;
         line-height: 10px;
         font-size: 2vw;
-       
     }
     .header-hide img {
         margin-top: -10px;
@@ -71,21 +70,15 @@
         font-size: 2.2vw;
         margin-bottom: 1px;
     }
-    #description {
+    .topleft #description {
         line-height: 40px;
         font-size: 2vw;
+        padding: 3px;
     }
     .container img {
         height: 500px;
         width: 100%;
     }
-    /*.fiveday {
-        margin-top: 10px;
-        background-color: #c44d58;
-        color: white;
-        padding: 10px;
-        margin-left: 5px;
-    }*/
     table th {
         background-color: #ff6b6b;
     }
@@ -177,6 +170,7 @@
     }
     .grid-item h3 {
         font-size: 3vw;
+        margin-bottom: 60px;
     }
     .json {
         font-size: 1.5em;

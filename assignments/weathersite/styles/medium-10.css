@@ -18,12 +18,12 @@
     }
     .topleft {
         font-size: 2vw;
-        height: 250px;
+        height: 300px;
         margin-left: 15px;
-        padding-top: 10px;
+        padding-top: 5px;
     }
-    #description {
-        line-height: 30px;
+    .topleft #description {
+        line-height: 40px;
         font-size: 3vw;
     }
     .fiveday {
@@ -49,11 +49,12 @@
     }
     article .left {
         width: 35%;
+        
     }
     article img {
-        margin-top: 40px;
+        margin-top: 30px;
         width: 25vw;
-        height: 35vw;
+        height: 55vw;
     }
     #contact p,
     h4 {
@@ -62,7 +63,7 @@
         font-size: 2vw;
     }
     #contact iframe {
-        margin-left: 50px;
+        margin-left: 25px;
     }
     #gallery {
         font-size: 2vw;
@@ -70,19 +71,41 @@
     #gridContainer {
         grid-template-columns: 1fr 1fr;
     }
-  
     input[type="radio"] {
         margin-left: -150px;
         margin-right: -148px;
     }
     .thanks {
-        font-size:4vw;
+        font-size: 4vw;
     }
     section article {
         width: 40%;
         float: left;
-      }
-      section{
-        width:90%; 
+    }
+    section {
+        width: 90%;
+    }
+    .grid-item h3 {
+        font-size: 4vw;
+    }
+   
+    .json {
+        font-size: 2.5vw;
+    }
+    
+    #fHmotto {
+  
+        line-height: 35px;
+    }
+    #PrestonMotto {
+        line-height: 20px;
+    }
+    #Smotto {
+       
+        font-size: 2.5vw;
+        line-height: 25px;
+    }
+    .jsonInfo {
+        font-size: 2.5vw;
     }
 }

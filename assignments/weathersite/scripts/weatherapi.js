@@ -13,12 +13,12 @@ weatherRequest.onload = function () {
    document.getElementById("icon").setAttribute("alt", description);
    document.getElementById("current-conditions").innerHTML = weatherData.weather[0].main;
    
-   document.getElementById("current-temp").innerHTML = weatherData.main.temp;
+   document.getElementById("current-temp").innerHTML = weatherData.main.temp.toFixed (0);
    document.getElementById("pressure").innerHTML = weatherData.main.pressure;
    document.getElementById("humidity").innerHTML = weatherData.main.humidity;
-   document.getElementById("temp_min").innerHTML = weatherData.main.temp_min;
-   document.getElementById("temp_max").innerHTML = weatherData.main.temp_max;
-   document.getElementById("windspeed").innerHTML = weatherData.wind.speed;
+   document.getElementById("temp_min").innerHTML = weatherData.main.temp_min.toFixed (0);
+   document.getElementById("temp_max").innerHTML = weatherData.main.temp_max.toFixed (0);
+   document.getElementById("windspeed").innerHTML = weatherData.wind.speed.toFixed (0);
 
 
 
@@ -31,28 +31,28 @@ forecastRequest.responseType = 'json';
 forecastRequest.send();
 forecastRequest.onload = function () {
    var forecastData = forecastRequest.response;
-   showForecast(forecastData);
+  showForecast(forecastData);
 
 
 
 
-   document.getElementById("tempmin1").innerHTML = forecastData.list[1].main.temp_min;
-   document.getElementById("tempmax1").innerHTML = forecastData.list[6].main.temp_max;
+   document.getElementById("tempmin1").innerHTML = forecastData.list[1].main.temp_min.toFixed (0);
+   document.getElementById("tempmax1").innerHTML = forecastData.list[6].main.temp_max.toFixed (0);
 
 
-   document.getElementById("tempmin2").innerHTML = forecastData.list[9].main.temp_min;
-   document.getElementById("tempmax2").innerHTML = forecastData.list[14].main.temp_max;
+   document.getElementById("tempmin2").innerHTML = forecastData.list[9].main.temp_min.toFixed (0);
+   document.getElementById("tempmax2").innerHTML = forecastData.list[14].main.temp_max.toFixed (0);
 
 
-   document.getElementById("tempmin3").innerHTML = forecastData.list[17].main.temp_min;
-   document.getElementById("tempmax3").innerHTML = forecastData.list[22].main.temp_max;
+   document.getElementById("tempmin3").innerHTML = forecastData.list[17].main.temp_min.toFixed (0);
+   document.getElementById("tempmax3").innerHTML = forecastData.list[22].main.temp_max.toFixed (0);
 
 
-   document.getElementById("tempmin4").innerHTML = forecastData.list[25].main.temp_min;
-   document.getElementById("tempmax4").innerHTML = forecastData.list[30].main.temp_max;
+   document.getElementById("tempmin4").innerHTML = forecastData.list[25].main.temp_min.toFixed (0);
+   document.getElementById("tempmax4").innerHTML = forecastData.list[30].main.temp_max.toFixed (0);
 
-   document.getElementById("tempmin5").innerHTML = forecastData.list[33].main.temp_min;
-   document.getElementById("tempmax5").innerHTML = forecastData.list[38].main.temp_max;
+   document.getElementById("tempmin5").innerHTML = forecastData.list[33].main.temp_min.toFixed (0);
+   document.getElementById("tempmax5").innerHTML = forecastData.list[38].main.temp_max.toFixed (0);
 
 }
 function showForecast(forecastData) {
@@ -88,5 +88,5 @@ function showForecast(forecastData) {
       else if (today == 5) return 'Fri';
       else return 'Sat';
    }
-
 }
+

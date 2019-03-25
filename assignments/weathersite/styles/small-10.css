@@ -75,8 +75,6 @@ nav li a {
     background-color: #4ecdc4;
 }
 
-
-
 nav a:focus {
     color: black;
 }
@@ -96,7 +94,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 6vw;
 }
 
 main {
@@ -111,26 +109,31 @@ main {
     margin-bottom: 0;
 }
 
+.topleft h2 {
+    font-size: 4vw;
+}
+
 .topleft {
     font-size: 3.5vw;
     font-display: center;
-    line-height: 10px;
+    line-height: 8px;
     width: 40%;
-    height: 170px;
+    height: 178px;
     border: 3px solid white;
     box-sizing: border-box;
     background-color: #4ecdc4;
     position: absolute;
     top: 40px;
     left: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
-#description {
+ .topleft #description {
     display: block;
-    font-display: center;
     line-height: 15px;
-    font-size: 4vw;
-    margin-top: 5px;
+    
+    
 }
 
 .container img {
@@ -176,15 +179,13 @@ h4 {
 }
 
 #contact iframe {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 #gridContainer {
     display: grid;
     margin: 0;
-  
 }
-
 
 #gallery {
     background-color: #dcf5a3;
@@ -219,7 +220,7 @@ h4 {
 }
 
 #background {
-    background-color: rgb(218, 160, 252);
+    background-color: rgb(227, 199, 243);
 }
 
 .grid-item img {
@@ -261,7 +262,9 @@ h4 {
     padding: .2em;
     margin: 0 auto;
 }
-
+#form h1 {
+    margin-left: 10px;
+}
 #weatherForm {
     text-align: left;
 }

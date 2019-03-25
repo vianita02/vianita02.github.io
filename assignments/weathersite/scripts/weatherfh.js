@@ -16,12 +16,12 @@ weatherRequest.onload = function () {
 
 
 
-   document.getElementById("fhcurrent-temp").innerHTML = weatherData.main.temp;
+   document.getElementById("fhcurrent-temp").innerHTML = weatherData.main.temp.toFixed (0);
    document.getElementById("fhpressure").innerHTML = weatherData.main.pressure;
    document.getElementById("fhhumidity").innerHTML = weatherData.main.humidity;
-   document.getElementById("fhtemp_min").innerHTML = weatherData.main.temp_min;
-   document.getElementById("fhtemp_max").innerHTML = weatherData.main.temp_max;
-   document.getElementById("fhwindspeed").innerHTML = weatherData.wind.speed;
+   document.getElementById("fhtemp_min").innerHTML = weatherData.main.temp_min.toFixed (0);
+   document.getElementById("fhtemp_max").innerHTML = weatherData.main.temp_max.toFixed (0);
+   document.getElementById("fhwindspeed").innerHTML = weatherData.wind.speed.toFixed (0);
 }
 var apiforecaststring = 'https://api.openweathermap.org/data/2.5/forecast?zip=83287,us&APPID=bce121c08c27c65cd7f48d40df929695&units=imperial';
 var forecastRequest = new XMLHttpRequest();
@@ -33,23 +33,23 @@ forecastRequest.onload = function () {
    showForecast(forecastData);
   
 
-   document.getElementById("fhtempmin1").innerHTML = forecastData.list[1].main.temp_min;
-   document.getElementById("fhtempmax1").innerHTML = forecastData.list[6].main.temp_max;
+   document.getElementById("fhtempmin1").innerHTML = forecastData.list[1].main.temp_min.toFixed (0);
+   document.getElementById("fhtempmax1").innerHTML = forecastData.list[6].main.temp_max.toFixed (0);
 
 
-   document.getElementById("fhtempmin2").innerHTML = forecastData.list[9].main.temp_min;
-   document.getElementById("fhtempmax2").innerHTML = forecastData.list[14].main.temp_max;
+   document.getElementById("fhtempmin2").innerHTML = forecastData.list[9].main.temp_min.toFixed (0);
+   document.getElementById("fhtempmax2").innerHTML = forecastData.list[14].main.temp_max.toFixed (0);
 
 
-   document.getElementById("fhtempmin3").innerHTML = forecastData.list[17].main.temp_min;
-   document.getElementById("fhtempmax3").innerHTML = forecastData.list[22].main.temp_max;
+   document.getElementById("fhtempmin3").innerHTML = forecastData.list[17].main.temp_min.toFixed (0);
+   document.getElementById("fhtempmax3").innerHTML = forecastData.list[22].main.temp_max.toFixed (0);
 
 
-   document.getElementById("fhtempmin4").innerHTML = forecastData.list[25].main.temp_min;
-   document.getElementById("fhtempmax4").innerHTML = forecastData.list[30].main.temp_max;
+   document.getElementById("fhtempmin4").innerHTML = forecastData.list[24].main.temp_min.toFixed (0);
+   document.getElementById("fhtempmax4").innerHTML = forecastData.list[30].main.temp_max.toFixed (0);
 
-   document.getElementById("fhtempmin5").innerHTML = forecastData.list[33].main.temp_min;
-   document.getElementById("fhtempmax5").innerHTML = forecastData.list[38].main.temp_max;
+   document.getElementById("fhtempmin5").innerHTML = forecastData.list[33].main.temp_min.toFixed (0);
+   document.getElementById("fhtempmax5").innerHTML = forecastData.list[38].main.temp_max.toFixed (0);
 
 }
 function showForecast(forecastData) {

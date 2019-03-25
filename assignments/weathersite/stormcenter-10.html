@@ -24,7 +24,7 @@
                 <h3>Can we play outside today?</h3>
             </div>
         </div>
-       
+
     </header>
     <nav>
         <button onclick="toggleMenu()">&#9776;Menu</button>
@@ -49,7 +49,7 @@
                         <legend>Reporter Information</legend>
                         <div>
                             <label for="fname">*Full Name:</label>
-                            <input type="text" name="fname" id="fname"  min="5" required>
+                            <input type="text" name="fname" id="fname" min="5" required>
                         </div>
                         <div>
                             <label for="email">Email</label>
@@ -88,7 +88,8 @@
                         </div>
                         <div>
                             <label for="rating">Storm Severity <em>(1 to 10): </em></label>
-                            <input type="range"  id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">5</span>
 
                         </div>
@@ -104,15 +105,15 @@
 
                         </div>
                         <div>User in danger level:</div>
-                        
-                            <label id="danger"><input type="radio" name="userDanger" value="yes">Yes</label>
-                            <label id="danger"><input type="radio" name="userDanger" value="maybe">Maybe</label>
-                            <label id="danger"><input type="radio" name="userDanger" value="no">No</label>
-                        
+
+                        <label id="danger"><input type="radio" name="userDanger" value="yes">Yes</label>
+                        <label id="danger"><input type="radio" name="userDanger" value="maybe">Maybe</label>
+                        <label id="danger"><input type="radio" name="userDanger" value="no">No</label>
+
                         <div>
-                        <div>Comments:</div>
-                            <textarea id="text" rows="5" cols="45" name="comment"
-                                form="weatherForm" placeholder="Enter comments here..."></textarea>
+                            <div>Comments:</div>
+                            <textarea id="text" rows="5" cols="45" name="comment" form="weatherForm"
+                                placeholder="Enter comments here..."></textarea>
                         </div>
 
                     </fieldset>
@@ -130,7 +131,6 @@
     </footer>
     </div>
     <script src="scripts/currendate.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/slider.js"></script>
 </body>
 
