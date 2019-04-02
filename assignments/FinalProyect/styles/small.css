@@ -1,0 +1,181 @@
+/*font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;*/
+*,*::before,*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header,
+footer {
+    padding: .2em;
+    margin: 0 auto;
+    background-color: #006064;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    height: 30vw;
+    width: 45vw;
+    margin-left: 10px;
+}
+
+header button {
+    background-color: #ffa726;
+    font-weight: bold;
+    color: black;
+    border: 0;
+    padding: .5rem 1rem;
+    font-size: 4.2vw;
+    transition: all .3s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button:hover {
+    box-shadow: 0px 15px 25px -5px rgba(darken(#c77800, 40%));
+    transform: scale(1.03);
+}
+
+button:active {
+    box-shadow: 0px 4px 8px rgba(darken(#c77800, 30%));
+    transform: scale(.98);
+}
+
+header h1 {
+    font-size: 5.5vw;
+}
+
+header h3 {
+    font-size: 4vw;
+    margin-right: 10px;
+
+}
+
+nav button {
+    background-color: #428e92;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+}
+
+nav li {
+    background-color: #428e92;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+.active {
+    background-color: #00363a;
+}
+
+nav a:hover {
+    background-color: #c77800;
+}
+
+ul li ul li {
+    display: none;
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+
+/*img {
+    height: 150px;
+    width: auto;
+
+}
+
+.gridContainer {
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+
+}*/
+.wrapper {
+    display: grid;
+    background-color: #428e92;
+    width: 900px;
+    max-width: 100%;
+    height: 80vh;
+    margin: 30px auto;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.box {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.box1 {
+    grid-column: span 3;
+    grid-row: span 3;
+    background-image: url(https://github.com/vianita02/vianita02.github.io/blob/master/temple%20inn/01-Concepcion-Chile-Temple-d2113673.jpgianita02.github.io/templeinn/01-Concepcion-Chile-Temple-d2113673.jpg)
+}
+
+.box2 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url();
+}
+
+.box3 {
+    grid-column:1 / span 2;
+    grid-row:4 / span 3;
+}
+
+.box4 {
+    grid-column:3 / span 1;
+    grid-row:4 / span 1;
+}
+
+.box5 {
+    grid-column:4 / span 2;
+    grid-row:3 / span 2;
+}
+
+.box6 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width:500px) {}

@@ -1,0 +1,80 @@
+@media only screen and (min-width: 1201px) {
+    
+    header {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 15vw;
+        height: 8vw;
+        margin-left: 20px;
+    }
+
+    header button {
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    header h3 {
+        font-size: 1vw;
+        margin-right: 20px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav li {
+        border: none;
+        width: 270px;
+        height: 42px;
+        font-size: 1rem;
+        background-color: #428e92;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+    }
+
+    nav li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: none;
+        border-top: none;
+    }
+
+    #primaryNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+   /* #wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    
+
+    img {
+        
+        height: 400px;
+        width: auto;
+
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-gap: 1em;
+
+    }
+    .box1 {
+        height: 250px;
+        width: auto;
+        grid-column: 1/ span 3;
+    }*/
+}

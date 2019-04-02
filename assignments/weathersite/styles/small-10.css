@@ -220,7 +220,7 @@ h4 {
 }
 
 #background {
-    background-color: rgb(227, 199, 243);
+    background-color: rgba(227, 199, 243, 0.651);
 }
 
 .grid-item img {

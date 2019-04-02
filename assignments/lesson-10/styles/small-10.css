@@ -74,11 +74,6 @@ nav li a {
 .active {
     background-color: #4ecdc4;
 }
-
-/*a:visited {
-    color: #f89407;
-}*/
-
 nav a:focus {
     color: black;
 }
@@ -96,18 +91,6 @@ h1 {
     font-size: 5vw;
     margin: 0;
 }
-
-h2 {
-    font-size: 4vw;
-}
-
-main {
-    text-align: center;
-    font-family: 'Happy Monkey', cursive;
-    padding: .2em;
-    margin: 0 auto;
-}
-
 .container {
     position: relative;
     margin-bottom: 0;
