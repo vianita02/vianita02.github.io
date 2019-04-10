@@ -1,3 +1,186 @@
-@media only screen and (min-width: 501px)and (max-width:1200px)  {
-   
+@media only screen and (min-width: 501px)and (max-width:1000px)  {
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .logo h1 {
+        font-size: 2rem;
+
+    }
+    
+    nav button {
+        display: none;
+    }
+
+    nav li {
+        border: none;
+        width: 180px;
+        height: 45px;
+        font-size: .9rem;
+        background-color: #428e92;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+    }
+
+    nav li a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: none;
+        border-top: none;
+    }
+
+    #primaryNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul.hide {
+        display: block;
+    }  
+    .left img {
+        margin-left: 15px;
+    }
+    .container {
+        width: 650px;
+        margin-top: 100px;
+        margin-left: 60px;
+        font-size: 1.2rem;
+
+    }
+
+    .container p {
+        font-size: 1rem;
+        line-height: 25px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    .wrapper {
+        width: 700px;
+        max-width: 100%;
+        height: 65vh;
+        margin: 5px, auto;
+    }
+    .links {
+        display: flex;
+        flex-direction: right;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+    }
+    .links img {
+        width: 240px;
+        height: auto;
+        padding: 8px;
+    }
+
+    figcaption {
+        width: 90%;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .temple {
+        width: 500px;
+        margin-top: 100px;
+        margin-left: 100px;
+        line-height: 30px;
+        font-size: 1.2rem;
+    }
+
+    .pic img {
+        
+        width: 350px;
+        height: auto;
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+
+    .temple h1 {
+        line-height: 40px;
+    }
+    #form h1 {
+        padding-top: 50px;
+        margin-left: 200px;
+        margin-bottom: 0;
+    }
+    #form fieldset {
+        width: 400px;
+        margin-left: 200px;
+    }
+    #submit {
+        margin-left: 300px;
+    }
+    
+    .services {
+        width: 600px;
+        margin-left: 80px;
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 100px;
+        line-height: 20px;
+
+    }
+
+    .services h3 {
+        text-align: left;
+        font-size: 2vw;
+        margin-bottom: 20px;
+    }
+
+    .services li {
+        font-size: 1.5vw;
+    }
+
+    .services button {
+        font-size: 1.5vw;
+        margin-right: 100px;
+    }
+
+    .services h4 {
+        margin-top: 50px;
+        font-size: 1.5vw;
+    }
+    .reception p {
+        margin-top: 120px;
+        margin-bottom: 0;
+        
+    }
+    .reception .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 600px;
+        margin-left: 80px;
+    }
+    .reception img {
+        height: 160px;
+        width: 280;
+
+    }
+    .missionaries .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        width: 700px;
+        margin-left: 50px;
+
+    }
+    .missionaries img {
+        height: 150px;
+        width: 200px;
+
+    }
+    .contact {
+        margin-left: 200px;
+        margin-top: 100px;
+          
+    }
+    .contact p {
+        font-size: 3vw;
+        line-height: 20px;
+        margin-bottom: 20px;
+       
+    }
+
 }
