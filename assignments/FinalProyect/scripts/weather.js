@@ -9,20 +9,20 @@
     weatherRequest.send();
     weatherRequest.onload = function () {
         var weatherData = weatherRequest.response;
-   
+        
         var templeWeather;
-        if (zip = '87122') {
-            templeWeather = 'temple1'
-        } else if (zip = '80122') {
-            templeWeather = 'temple2'
-        } else if (zip = '33331') {
-            templeWeather = 'temple3'
-        } else if (zip = '85297') {
-            templeWeather = 'temple4'
-        } else if (zip = '84095') {
-            templeWeather = 'temple5'
+        if (zip === '87122') {
+            templeWeather = ('temple1');
+        } else if (zip === '80122') {
+            templeWeather = ('temple2');
+        } else if (zip === '33331') {
+            templeWeather = ('temple3');
+        } else if (zip === '85297') {
+            templeWeather = ('temple4');
+        } else if (zip === '84095') {
+            templeWeather = ('temple5');
         }
-        document.getElementById(templeWeather).innerHTML = weatherData.main.temp.toFixed (0) + ' F ';
+        document.getElementById(templeWeather).innerHTML=weatherData.main.temp.toFixed(0) + ' F ';
     }   
     }
    

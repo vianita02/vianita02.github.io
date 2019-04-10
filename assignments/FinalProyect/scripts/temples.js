@@ -1,6 +1,6 @@
 
 
-var apiTemples = 'json/temples.json';
+var apiTemples = 'https://github.com/vianita02/vianita02.github.io/blob/master/assignments/FinalProyect/json/temples.json';
 var templeRequest = new XMLHttpRequest();
 
 templeRequest.open('GET', apiTemples, true);
