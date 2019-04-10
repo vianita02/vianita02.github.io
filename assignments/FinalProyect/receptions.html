@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description=" temple inn home">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Temple Inn & Suites</title>
+    <title>Receptions</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalized.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -14,40 +14,100 @@
     <link rel="stylesheet" href="styles/large.css">
 
 </head>
+<div class="background">
 
-<body>
+    <body>
+        <script src="scripts/hamburguer.js"></script>
+        <header>
+            <div class="logo">
+                <img src="images/moroni-logo-blanco.png" alt="moroni">
+                <h1>The Temple Inn & Suites</h1>
+            </div>
+            <div>
+                <p>
+                    <h3>Call us : 800-800-8000</h3>
+                </p>
+                <a href="reservations.html"><button>Book Now</button></a>
+            </div>
 
-    <header>
-        <img src="images/logoblanco2.png" alt="Temple Inn & Suites logo">
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li class="active"><a href="services.html">Services</a>
+                    <ul>
+                        <li><a href="receptions.html">Receptions</a></li>
+                        <li><a href="fulltimemissionaries.html">Full-Time Temple Missionaries</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <p>The Temple Inn & Suites offers you the option to celebrate your special day with a beautifull
+                    reception.
 
-        <div>
-            <p>
-                <h3>Call us : 800-800-8000</h3>
-            </p>
-            <button>Book Now</button>
-        </div>
+                    From small personal gatherings to grand celebrations, our dedicated staff will assist you with your
+                    special event from start to finish, allowing you to relax and enjoy the wedding of your dreams.The
+                    Temple Inn & Suites staff focuses on the details of your event so you can fully experience your
+                    special
+                    occasion.
+                    We also offer catering with different delicious menus you can choose from
+                    Contact us to make a personalized plan</p>
+            </div>
+            <div class="reception">
+                <div class="links">
+                    <figure>
+                        <img src="images/bride.jpg" alt="bride">
+                    </figure>
+                    <figure>
+                        <img src="images/table-setting-ghi.jpg" alt="table setting">
+                    </figure>
+                    <figure>
+                        <img src="images/table-setting-2.jpg" alt="table setting">
+                    </figure>
+                    <figure>
+                        <img src="images/cake.jpg" alt="wedding cake">
+                    </figure>
+                    <figure>
+                        <img src="images/dinner-plate.jpg" alt="dinner plate">
+                    </figure>
+                    <figure>
+                        <img src="images/place-cards.jpg" alt="place cards">
+                    </figure>
+                    <figure>
+                        <img src="images/weddingcake-.jpg" alt="wedding cake">
+                    </figure>
+                    <figure>
+                        <img src="images/veggie-tray.jpg" alt="veggie tray">
+                    </figure>
+                    <figure>
+                        <img src="images/private-dining-room.jpg" alt="private dinning room">
+                    </figure>
+                    <figure>
+                        <img src="images/pool-private-reception-terrace.jpg" alt="pool reception">
+                    </figure>
+                    <figure>
+                        <img class="ballroom" src="images/mdv-architectural-ballroom-summer-horizontal_51_1024473.jpg"
+                            alt="ballroom">
+                    </figure>
+                    <figure>
+                        <img src="images/grand-ballroom.jpg" alt="ballroom">
+                    </figure>
 
-    </header>
-    <nav>
-        <button onclick="toggleMenu()">&#9776;Menu</button>
-        <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="temples.html">Temples</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="services.html">Services</a>
-                <ul>
-                    <li><a href="receptions.html">Receptions</a></li>
-                    <li><a href="fulltimemissionaries.html">Full-Time Temple Missionaries</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <footer>
-        <p>&copy;2019 - Viviana Estay - <a href="reference.html">References</a>
-        <p id="currentdate"></p>
-    </footer>
-</body>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;2019 - Viviana Estay - <a href="reference.html">References</a>
+                <p id="currentdate"></p>
+        </footer>
+        <script src="scripts/currendate.js"></script>
+    </body>
+</div>
 
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description=" temple inn home">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Temple Inn & Suites</title>
+    <title>Full Time Missionaries</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalized.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -14,40 +14,120 @@
     <link rel="stylesheet" href="styles/large.css">
 
 </head>
+<div class="background">
 
-<body>
+    <body>
+        <script src="scripts/hamburguer.js"></script>
+        <header>
+            <div class="logo">
+                <img src="images/moroni-logo-blanco.png" alt="moroni">
+                <h1>The Temple Inn & Suites</h1>
+            </div>
 
-    <header>
-        <img src="images/logoblanco2.png" alt="Temple Inn & Suites logo">
+            <div>
+                <p>
+                    <h3>Call us : 800-800-8000</h3>
+                </p>
+                <a href="reservations.html"><button>Book Now</button></a>
+            </div>
 
-        <div>
-            <p>
-                <h3>Call us : 800-800-8000</h3>
-            </p>
-            <button>Book Now</button>
-        </div>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li class="active"><a href="services.html">Services</a>
+                    <ul>
+                        <li><a href="receptions.html">Receptions</a></li>
+                        <li><a href="fulltimemissionaries.html">Full-Time Temple Missionaries</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <p>The Temple Inn & Suites offers accomodations for full-time missionaries.
+                    We have different options available. You will feel just like home in our spacios
+                    and luxury rooms. We offer Double and King rooms. You have acces to the spa, fitness-center,
+                    pool, restaurant and many more amazing amenities. </p>
+                <p>*Please fill out the form for more information, prices and packages.</p>
+            </div>
+            <div class="missionaries">
+                <div class="links">
+                    <figure>
+                        <img src="images/deluxe-double.jpg" alt="double-room">
+                        <figcaption>Deluxe Double Room</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/deluxe-king-room.jpg" alt="deluxe-king-room">
+                        <figcaption>Deluxe King Room</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/premier-king-executive-bedroom.jpg" alt="premier king executive bedroom">
+                        <figcaption>Premier King Room</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/executive-corner-suite-living-room.jpg"
+                            alt="executive corner suite living room">
+                        <figcaption>Suite Living Room</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/fitness-center.jpg" alt="fitness center">
+                        <figcaption>Fitness Center</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mdv-architectural-apex-restaurant.jpg" alt="restaurant">
+                        <figcaption>Restaurant</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mokara-spa-reception.jpg" alt="spa">
+                        <figcaption>Spa</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/pool.jpg" alt="pool">
+                        <figcaption>Pool</figcaption>
+                    </figure>
 
-    </header>
-    <nav>
-        <button onclick="toggleMenu()">&#9776;Menu</button>
-        <ul id="primaryNav" class="hide">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="temples.html">Temples</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="services.html">Services</a>
-                <ul>
-                    <li><a href="receptions.html">Receptions</a></li>
-                    <li><a href="fulltimemissionaries.html">Full-Time Temple Missionaries</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+                </div>
+                <div id="form">
 
-    <footer>
-        <p>&copy;2019 - Viviana Estay - <a href="reference.html">References</a>
-        <p id="currentdate"></p>
-    </footer>
-</body>
+                    <h1>Contact Us </h1>
+                    <form method="GET" action="thanks.html" id="missionaryForm">
+                        <div>
+                            <fieldset>
+                                <div>
+                                    <label for="fname">*Full Name:</label>
+                                    <input type="text" name="fname" id="fname" min="5" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="someone@gmail.com">
+                                </div>
+                                <div>
+                                    <label for="pnumber">*Phone number: </label>
+                                    <input type="tel" name="pnumber" id="pnumber" required>
+                                </div>
+                                <div>Special Acomodations/Comments:</div>
+                                <textarea id="text" rows="5" cols="30" name="comment" form="reservationForm"
+                                    placeholder="Enter comments here..."></textarea>
+
+                            </fieldset>
+                            <div id="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;2019 - Viviana Estay - <a href="reference.html">References</a>
+                <p id="currentdate"></p>
+        </footer>
+        <script src="scripts/currendate.js"></script>
+    </body>
+</div>
 
 </html>

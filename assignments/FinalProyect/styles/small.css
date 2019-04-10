@@ -24,13 +24,23 @@ header {
     flex-direction: row;
     justify-content: space-between;
 }
-
-header img {
-    height: 30vw;
-    width: 48vw;
-    margin-left: 10px;
+.logo {
+    display:flex;
+    flex-direction: row;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
 }
 
+.logo img {
+    height: 15vw;
+    width: 15vw;
+    margin-left: 10px;
+ 
+}
+.logo h1 {
+    font-size: 1rem;
+    margin-left:-7px;
+}
 header button {
     background-color: #ffa726;
     font-weight: bold;
@@ -55,11 +65,11 @@ button:active {
 }
 
 header h1 {
-    font-size: 5.5vw;
+    font-size: 3vw;
 }
 
 header h3 {
-    font-size: 4vw;
+    font-size: 3vw;
     margin-right: 10px;
     margin-bottom: 10px;
 
@@ -70,7 +80,7 @@ nav button {
     width: 100%;
     color: white;
     border: none;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 nav li {
@@ -117,12 +127,15 @@ ul li:hover ul li {
 }
 
 .background {
-    background-color: #eeeeee;
+    background-color:white;
+}
+
+main {
+    font-family: 'Playfair Display', serif;
 }
 
 .container {
     width: 100%;
-    font-family: 'Playfair Display', serif;
     text-align: center;
     line-height: 20px;
     margin-top: 30px;
@@ -192,7 +205,6 @@ ul li:hover ul li {
 article div {
     width: 98%;
     position: relative;
-    font-family: 'Playfair Display', serif;
 }
 
 .left img {
@@ -235,56 +247,166 @@ h3 {
 
 .links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 10px;
+    margin: 30px auto;
+    grid-gap: 5px;
 }
 
 .links img {
-    width: 120px;
-    height: auto;
-    padding: 5px;
-
+    width: 350px;
+    max-width: 100%;
+    height: 55vh;
 }
 
 figcaption {
-    width: 70%;
-    font-family: 'Playfair Display', serif;
-    font-size: 4vw;
+    width: 100%;
+    font-size: 7vw;
     text-align: center;
-
-
 }
-.temple{
-    font-family: 'Playfair Display', serif;
-    width:300px;
+
+.temple {
+    width: 300px;
     margin: 50px 20px;
     line-height: 20px;
-    
 }
+
 .pic img {
     width: 200px;
     height: auto;
-    margin-left: 50px;
+    margin-top: 30px;
+    margin-left: 70px;
 }
+
 .temple h1 {
     text-align: center;
     line-height: 30px;
-
 }
+
 .temple h3 {
     font-style: italic;
     padding: 5px;
-    background-color:#80c2c5;
+    background-color: #80c2c5;
     margin-top: 5px;
 }
 
 .temple li {
     list-style-type: none;
 }
+
+
 footer a {
     color: white;
 }
+
+#form {
+    padding: .2em;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#form h1 {
+    margin-left: 20px;
+}
+
+#form fieldset {
+    margin: 5px;
+    border: 1px solid #00363a;
+    border-radius: 10px;
+    padding: .5em;
+}
+
+label,
+#form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+#form input {
+    display: inline-block;
+    font-size: 1rem;
+    border: solid 1x #c77800;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 86%;
+    max-width: 20rem;
+    background-color:#ffa726;
+}
+
+#form select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1x #c77800;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 80%;
+    max-width: 20rem;
+    background-color: #ffa726;
+}
+
+#submit {
+    border: none;
+    border-radius: 1rem;
+    padding: .80rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 80%;
+    max-width: 20rem;
+}
+
+#text {
+    border: solid 1x#c77800;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 85%;
+    max-width: 20rem;
+    background-color: #ffa726;
+}
+
+::placeholder {
+    color: #00363a;
+}
+
+.thanks {
+    font-size: 6.5vw;
+    padding: 50px;
+}
+
+.services {
+    width: 250px;
+    margin-left: 30px;
+}
+
+.services h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.services h4 {
+    padding: 10px;
+}
+.services button {
+    background-color: #ffa726;
+    font-weight: bold;
+    color: black;
+    border: 0;
+    padding: .5rem .5rem;
+    font-size: 4.5vw;
+    border-radius: 5px;
+    margin-right: 18px;
+    margin-bottom: 50px;
+}
+.contact {
+    margin-left: 20px;
+      
+}
+.contact p {
+    font-size: 6vw;
+    line-height: 15px;
+    margin-bottom: 20px;
+}
+
+
+
 
 @media screen and (max-width:500px) {}
